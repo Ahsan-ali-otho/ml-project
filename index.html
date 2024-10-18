@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Price Predictions</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+    <style>
+        /* Simple CSS for loading spinner */
+        .loading-spinner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Center it vertically */
+            font-size: 1.5rem;
+            /* Increase font size */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bitcoin Price Predictions</h1>
+        <div id="loadingSpinner" class="loading-spinner" role="alert" style="display: none;">
+            Loading... <!-- Loading message -->
+        </div>
+        <canvas id="predictionsChart" width="400" height="200" aria-label="Predicted Bitcoin Prices"
+            role="img"></canvas> <!-- Canvas for Chart -->
+        <div id="predictions" role="region" aria-labelledby="predictions-header">
+            <h2 id="predictions-header" style="display: none;">Predictions</h2> <!-- Hidden header for accessibility -->
+        </div>
+    </div>
+    <script src="index.js"></script> <!-- Link to your JavaScript file -->
+</body>
+
+</html>
